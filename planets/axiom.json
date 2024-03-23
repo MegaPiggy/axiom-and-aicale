@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Axiom",
+  "starSystem": "Jam3",
+  "Base": {
+    "surfaceSize": 662.4,
+    "surfaceGravity": 6.624,
+    "groundSize": 662.4,
+    "showMinimap": true
+  },
+  "Orbit": {
+    "primaryBody": "Jam 3 Sun",
+    "semiMajorAxis": 6624,
+    "axialTilt": 6624,
+    "inclination": 66.24,
+    "longitudeOfAscendingNode": 6624,
+    "argumentOfPeriapsis": 6624,
+    "trueAnomaly": 6624,
+    "dottedOrbitLine": true,
+    "siderealPeriod": 6.624
+  }
+}

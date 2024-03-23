@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Aicale",
+  "starSystem": "Jam3",
+  "Base": {
+    "surfaceSize": 66.24,
+    "surfaceGravity": 6.624,
+    "groundSize": 66.24,
+    "showMinimap": true
+  },
+  "Orbit": {
+    "primaryBody": "Axiom",
+    "semiMajorAxis": 6624,
+    "axialTilt": 6624,
+    "inclination": 66.24,
+    "longitudeOfAscendingNode": 6624,
+    "argumentOfPeriapsis": 6624,
+    "trueAnomaly": 6624,
+    "dottedOrbitLine": true,
+    "siderealPeriod": 6.624
+  }
+}

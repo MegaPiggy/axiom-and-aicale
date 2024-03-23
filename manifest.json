@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
+  "filename": "Axiom.dll",
+  "author": "MegaPiggy",
+  "name": "Axiom",
+  "uniqueName": "MegaPiggy.Axiom",
+  "version": "1.0.0",
+  "owmlVersion": "2.9.8",
+  "dependencies": [ "xen.NewHorizons", "xen.ModJam3" ]
+}
