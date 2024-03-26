@@ -3,10 +3,261 @@
   "name": "Axiom",
   "starSystem": "Jam3",
   "Base": {
-    "surfaceSize": 662.4,
+    "surfaceSize": 115,
     "surfaceGravity": 6.624,
-    "groundSize": 662.4,
-    "showMinimap": true
+    "showMinimap": true,
+    "hasMapMarker": true
+  },
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "revealFor": "both",
+        "revealOn": "enter",
+        "parentPath": "Sector/IcePlanet/QuietTown",
+        "isRelativeToParent": true,
+        "radius": 50,
+        "reveals": [
+          "AXIOM_VILLAGE"
+        ]
+      }
+    ],
+    "audioVolumes": [
+      {
+        "radius": 40,
+        "loop": true,
+        "rename": "MusicVolume",
+        "track": "music",
+        "audio": "audio/Quiet Town 120412 AP.ogg",
+        "isRelativeToParent": true,
+        "parentPath": "Sector/IcePlanet/QuietTown",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      //{
+      //  "radius": 10,
+      //  "loop": true,
+      //  "rename": "ObservatoryMusicVolume",
+      //  "track": "music",
+      //  "audio": "audio/Observatory 062913 AP.ogg",
+      //  "isRelativeToParent": true,
+      //  "parentPath": "Sector/IcePlanet/Observatory/MuseumVolume",
+      //  "position": {
+      //    "x": 0,
+      //    "y": 0,
+      //    "z": 0
+      //  }
+      //},
+      {
+        "radius": 70,
+        "loop": true,
+        "rename": "MusicVolume",
+        "track": "music",
+        "audio": "audio/Ancients (Long) 020613 AP.ogg",
+        "isRelativeToParent": true,
+        "parentPath": "Sector/IcePlanet/EscapePodZone",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "layer": 1,
+        "priority": 0,
+        "radius": 130,
+        "loop": true,
+        "rename": "AmbienceVolume",
+        "track": "environment",
+        "audio": "audio/PinegroveAmbience_day.ogg",
+        "isRelativeToParent": true,
+        "parentPath": "Sector/IcePlanet",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "layer": 1,
+        "priority": 1,
+        "radius": 97,
+        "loop": true,
+        "rename": "UnderwaterAmbienceVolume",
+        "track": "environmentUnfiltered",
+        "audio": "audio/UnderWaterAmbience.wav",
+        "isRelativeToParent": true,
+        "parentPath": "Sector/IcePlanet",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "radius": 95,
+        "loop": true,
+        "rename": "UnderwaterMusicVolume",
+        "track": "music",
+        "audio": "audio/The Depths 030613 AP.ogg",
+        "isRelativeToParent": true,
+        "parentPath": "Sector/IcePlanet",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ]
+  },
+  "ParticleFields": [
+    {
+      "type": "snowflakesHeavy",
+      "followTarget": "player",
+      "rename": "SnowflakesHeavy",
+      "densityByHeightCurve": [
+        {
+          "density": 0,
+          "height": 0
+        },
+        {
+          "density": 0,
+          "height": 95
+        },
+        {
+          "density": 10,
+          "height": 96
+        },
+        {
+          "density": 1,
+          "height": 130
+        }
+      ]
+    }
+  ],
+  "AmbientLights": [
+    {
+      "intensity": 0.8,
+      "isShell": true,
+      "innerRadius": 74,
+      "outerRadius": 94
+    },
+    {
+      "intensity": 1.2,
+      "isShell": true,
+      "innerRadius": 94,
+      "outerRadius": 130
+    }
+  ],
+  "Atmosphere": {
+    "size": 130,
+    "hasOxygen": true,
+    "hasTrees": true,
+    "atmosphereTint": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/axiomaicale.rem",
+        "path": "Assets/IcePlanet.prefab",
+        "keepLoaded": true,
+        //"activationCondition": "Axiom",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "signals": [
+      {
+        "audio": "audio/AlienBeacon_Source2.wav",
+        "parentPath": "Sector/IcePlanet/EscapePod/Exterior/EscapePod/EscapePod1/EscapePodSignal",
+        "isRelativeToParent": true,
+        "frequency": "EscapePod",
+        "name": "Alpha Escape Pod",
+        "rename": "EscapePodBeaconSignal",
+        "detectionRadius": 70,
+        "identificationRadius": 35,
+        "sourceRadius": 10,
+        "maxDistance": 70,
+        "onlyAudibleToScope": false
+      },
+      {
+        "audio": "audio/Observatory 062913 AP.ogg",
+        "parentPath": "Sector/IcePlanet/QuietTown/Radio/Signal",
+        "isRelativeToParent": true,
+        "frequency": "Radio",
+        "name": "Quiet Town Radio",
+        "rename": "ObservatoryMusic",
+        "onlyAudibleToScope": false
+      },
+      {
+        "audio": "audio/alien_geiger_counter.ogg",
+        "parentPath": "Sector/IcePlanet/QuietTown/SatelliteDish_V4/DishBeacon",
+        "isRelativeToParent": true,
+        "frequency": "Radio",
+        "name": "Quiet Town Satellite Dish",
+        "rename": "GeigerCounter",
+        "detectionRadius": 40,
+        "identificationRadius": 30,
+        "sourceRadius": 5,
+        "volume": 0.25
+      },
+      {
+        "audio": "audio/OW Banjo No Verb 050913.ogg",
+        "parentPath": "Sector/IcePlanet/TreeTravelers/Archeologist/ArcheologistMaster_banjo_anm/ArcheologistMaster_Rig:Hips/ArcheologistMaster_Rig:Spine/ArcheologistMaster_Rig:Spine1/ArcheologistMaster_Rig:spine3_CTRL/ArcheologistMaster_Rig:RightArm/ArcheologistMaster_Rig:RightForeArm/ArcheologistMaster_Rig:RightHand/BanjoContainer",
+        "isRelativeToParent": true,
+        "frequency": "Traveler",
+        "name": "Archeologist",
+        "rename": "BanjoSoundAndSignal",
+        "onlyAudibleToScope": false
+      },
+      {
+        "audio": "audio/OW Drums No Verb 050913.ogg",
+        "parentPath": "Sector/IcePlanet/TreeTravelers/Astronomer/Astronomer_drum_anm/Drum/Signal",
+        "isRelativeToParent": true,
+        "frequency": "Traveler",
+        "name": "Astronomer",
+        "rename": "DrumsSoundAndSignal",
+        "onlyAudibleToScope": false
+      },
+      {
+        "audio": "audio/OW Flute No Verb 050913.ogg",
+        "parentPath": "Sector/IcePlanet/TreeTravelers/Zen/Traveller_Zen_flute_anm/FluteRoot/Flute/Signal",
+        "isRelativeToParent": true,
+        "frequency": "Traveler",
+        "name": "Zen",
+        "rename": "BanjoSoundAndSignal",
+        "onlyAudibleToScope": false,
+        "volume": 1
+      },
+      {
+        "audio": "audio/OW Harmonica No Verb 050913.ogg",
+        "parentPath": "Sector/IcePlanet/TreeTravelers/Woodsman/Woodsman_Harmonica_AnmV2/HarmonicaRoot/HarmonicaSignal",
+        "isRelativeToParent": true,
+        "frequency": "Traveler",
+        "name": "Woodsman",
+        "rename": "HarmonicaSoundAndSignal",
+        "onlyAudibleToScope": false
+      }
+    ]
+  },
+  "Water": {
+    "size": 97.25,
+    "buoyancy": 0.99,
+    "tint": {
+      "r": 119,
+      "g": 166,
+      "b": 199 //,
+      //"a": 102
+    }
   },
   "Orbit": {
     "primaryBody": "Jam 3 Sun",
@@ -16,7 +267,24 @@
     "longitudeOfAscendingNode": 6624,
     "argumentOfPeriapsis": 6624,
     "trueAnomaly": 6624,
-    "dottedOrbitLine": true,
+    "showOrbitLine": true,
     "siderealPeriod": 6.624
-  }
+  },
+  "Spawn": {
+    "playerSpawn": {
+      "isRelativeToParent": true,
+      "parentPath": "Sector/IcePlanet/QuietTown/Prefab_Axiom_Campfire/PlayerSpawn",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "startWithSuit": true
+    },
+    "shipSpawn": {
+      "isRelativeToParent": true,
+      "parentPath": "Sector/IcePlanet/QuietTown/LandingPad/ShipSpawn"
+    }
+  },
+  "extras": { "farFromSun": true }
 }

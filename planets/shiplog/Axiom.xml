@@ -1,0 +1,55 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/ship-log/NewHorizons/shiplog_schema.xsd">
+  <ID>AXIOM</ID>
+
+  <Entry>
+    <ID>AXIOM_VILLAGE</ID>
+    <Name>Axiom Village</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+    <isCuriosity/>
+
+    <ExploreFact>
+      <ID>AXIOM_VILLAGE</ID>
+      <Text>I found a village of people.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>AXIOM_TRAVELER_BASE</ID>
+    <Name>Axiom Traveler Tree House</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+
+    <RumorFact>
+      <ID>AXIOM_TRAVELER_BASE_RUMOR</ID>
+      <Text>I found a village of people.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>AXIOM_TRAVELER_BASE_RUMOR_X2</ID>
+      <Text>I heard the base is resting spot for the travelers.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>AXIOM_TRAVELER_BASE</ID>
+      <Text>I talked to the travelers.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>AXIOM_ESCAPE_POD</ID>
+    <Name>Axiom Escape Pod</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+
+    <ExploreFact>
+      <ID>AXIOM_ESCAPE_POD_RUMOR</ID>
+      <Text>I heard about a crashed escape pod.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>AXIOM_ESCAPE_POD</ID>
+      <Text>I found the escape pod.</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

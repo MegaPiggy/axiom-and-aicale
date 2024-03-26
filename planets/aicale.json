@@ -3,20 +3,69 @@
   "name": "Aicale",
   "starSystem": "Jam3",
   "Base": {
-    "surfaceSize": 66.24,
-    "surfaceGravity": 6.624,
-    "groundSize": 66.24,
-    "showMinimap": true
+    "surfaceSize": 20,
+    "surfaceGravity": 2.016,
+    "showMinimap": true,
+    "hasMapMarker": true
+  },
+  "Atmosphere": {
+    "size": 24,
+    "atmosphereTint": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "Lava": { "size": 12 },
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "revealFor": "both",
+        "revealOn": "enter",
+        "parentPath": "Sector/Moon/Obsidian/Asteroid",
+        "isRelativeToParent": true,
+        "radius": 10,
+        "reveals": [
+          "AICALE_ASTEROID"
+        ]
+      }
+    ]
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/axiomaicale.rem",
+        "path": "Assets/Moon.prefab",
+        "keepLoaded": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "signals": [
+      {
+        "audio": "audio/OW Space - Into The Unknown 100912 AP.ogg",
+        "parentPath": "Sector/Moon/WardenArea/Radio/Signal",
+        "isRelativeToParent": true,
+        "frequency": "Radio",
+        "name": "Warden Radio",
+        "rename": "WardenMusic",
+        "onlyAudibleToScope": false
+      }
+    ]
   },
   "Orbit": {
     "primaryBody": "Axiom",
-    "semiMajorAxis": 6624,
+    "isMoon": true,
+    "semiMajorAxis": 662.4,
     "axialTilt": 6624,
     "inclination": 66.24,
     "longitudeOfAscendingNode": 6624,
     "argumentOfPeriapsis": 6624,
     "trueAnomaly": 6624,
-    "dottedOrbitLine": true,
-    "siderealPeriod": 6.624
+    "showOrbitLine": true,
+    "isTidallyLocked": true
   }
 }

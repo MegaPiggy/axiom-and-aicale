@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "travelAudio": "audio/OW 110912 AP.ogg",
+  "entryPositions": [
+    {
+      "id": "AXIOM_VILLAGE",
+      "position": {
+        "x": 250,
+        "y": 100
+      }
+    },
+    {
+      "id": "AXIOM_ESCAPE_POD",
+      "position": {
+        "x": 250,
+        "y": 100
+      }
+    },
+    {
+      "id": "AXIOM_TRAVELER_BASE",
+      "position": {
+        "x": 350,
+        "y": 100
+      }
+    },
+    {
+      "id": "AICALE_MOON_WARDEN",
+      "position": {
+        "x": 275,
+        "y": 0
+      }
+    },
+    {
+      "id": "AXIOM_BROKEN_SATELLITE",
+      "position": {
+        "x": 200,
+        "y": 0
+      }
+    },
+    {
+      "id": "AICALE_ASTEROID",
+      "position": {
+        "x": 350,
+        "y": 0
+      }
+    },
+    {
+      "id": "EORNOST",
+      "position": {
+        "x": 320,
+        "y": -150
+      }
+    },
+    {
+      "id": "GIESELWALD",
+      "position": {
+        "x": 220,
+        "y": -150
+      }
+    }
+  ],
+  "curiosities": [
+    {
+      "id": "AXIOM_AICALE",
+      "color": {
+        "r": 40,
+        "g": 83,
+        "b": 153,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 117,
+        "g": 221,
+        "b": 255,
+        "a": 255
+      }
+    }
+  ]
+}

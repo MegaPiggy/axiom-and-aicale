@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Broken Satellite",
+  "starSystem": "Jam3",
+  "Base": {
+    "surfaceSize": 30,
+    "soiOverride": 40,
+    "surfaceGravity": 0,
+    "hasMapMarker": false,
+    "showMinimap": false
+  },
+  "ReferenceFrame": {
+    "bracketRadius": 40,
+    "targetWhenClose": true
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/axiomaicale.rem",
+        "path": "Assets/BrokenSatelliteWithNodes.prefab",
+        "keepLoaded": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "signals": [
+      {
+        "audio": "audio/alien_geiger_counter",
+        "detectionRadius": 100,
+        "identificationRadius": 30,
+        "sourceRadius": 10,
+        "frequency": "Radio",
+        "onlyAudibleToScope": true,
+        "name": "Broken Satellite",
+        "reveals": "BROKEN_SATELLITE"
+      }
+    ]
+  },
+  "Orbit": {
+    "primaryBody": "Axiom",
+    "isMoon": true,
+    "semiMajorAxis": 331.2,
+    "inclination": 33.12,
+    "longitudeOfAscendingNode": 3312,
+    "argumentOfPeriapsis": 3312,
+    "trueAnomaly": 3312,
+    "siderealPeriod": 1,
+    "showOrbitLine": true,
+    "dottedOrbitLine": true,
+    //"isTidallyLocked": true,
+    "orbitLineFadeStartDistance": 3312
+  },
+  "Volumes": {
+    "zeroGravityVolumes": [
+      { "radius": 40 }
+    ]
+  },
+  "ShipLog": {
+    "mapMode": { "remove": true }
+  }
+}

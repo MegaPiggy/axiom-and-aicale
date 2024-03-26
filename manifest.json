@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
   "filename": "Axiom.dll",
   "author": "MegaPiggy",
-  "name": "Axiom",
+  "name": "Axiom's Refuge",
   "uniqueName": "MegaPiggy.Axiom",
   "version": "1.0.0",
   "owmlVersion": "2.9.8",

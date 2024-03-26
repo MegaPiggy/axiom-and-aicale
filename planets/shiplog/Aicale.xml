@@ -1,0 +1,16 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/ship-log/NewHorizons/shiplog_schema.xsd">
+  <ID>AICALE</ID>
+
+  <Entry>
+    <ID>AICALE_MOON_WARDEN</ID>
+    <Name>Moon Warden</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+    <isCuriosity/>
+
+    <ExploreFact>
+      <ID>AICALE_MOON_WARDEN</ID>
+      <Text>I met the moon warden living on Aicale.</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>
