@@ -183,6 +183,7 @@ namespace Axiom
             var astroObject = brokenSatellite.GetComponent<NHAstroObject>();
             astroObject._primaryBody._satellite = astroObject;
             astroObject._type = AstroObject.Type.Satellite;
+            brokenSatellite.GetComponentInChildren<Camera>().fieldOfView = 40;
             var satelliteSnapshot = astroObject._primaryBody.GetComponentInChildren<SatelliteSnapshotController>(true);
             satelliteSnapshot._satelliteCamera = brokenSatellite.GetComponentInChildren<OWCamera>();
             satelliteSnapshot._probeMesh = brokenSatellite.GetComponentInChildren<BrokenSatelliteManager>().transform.Find("BrokenSatellite/center").GetComponent<MeshRenderer>();
