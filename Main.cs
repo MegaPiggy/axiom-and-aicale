@@ -166,6 +166,7 @@ namespace Axiom
         private void OnAxiomLoaded(GameObject axiom)
         {
             ModHelper.Console.WriteLine("Axiom has loaded", MessageType.Info);
+            axiom.transform.Find("Sector/IcePlanet/Interior/QuietTown/TwoStoryCabin (1)/AirCurrent").transform.localPosition = new Vector3(-4.5452f, 9.061f, 1.25f);
             axiom.transform.Find("Sector/IcePlanet/Interior/Details/TreeHouseIsland").gameObject.SetActive(false); // Disable for now until I can make it less laggy
         }
 
