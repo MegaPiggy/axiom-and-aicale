@@ -15,6 +15,25 @@
   </Entry>
 
   <Entry>
+    <ID>AXIOM_OBSERVATORY</ID>
+    <Name>Axiom Observatory</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+    <isCuriosity/>
+
+    <RumorFact>
+      <ID>AXIOM_OBSERVATORY_RUMOR</ID>
+      <SourceID>AXIOM_VILLAGE</SourceID>
+      <Text>I heard that there is a observatory/museum near the village.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>AXIOM_OBSERVATORY</ID>
+      <Text>I read a plaque in the Observatory's Museum.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
     <ID>AXIOM_TRAVELER_BASE</ID>
     <Name>Axiom Traveler Tree House</Name>
 
@@ -48,7 +67,13 @@
       <ID>AXIOM_BROKEN_SATELLITE_RUMOR</ID>
       <SourceID>AXIOM_VILLAGE</SourceID>
       <RumorName>Broken Satellite</RumorName>
-      <Text>According to the Curator and Village Leader there is a satellite orbiting Axiom that needs repairs.</Text>
+      <Text>According to the Village Leader there is a satellite orbiting Axiom that needs repairs.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>AXIOM_BROKEN_SATELLITE_CURATOR_RUMOR</ID>
+      <SourceID>AXIOM_OBSERVATORY</SourceID>
+      <Text>The museum curator mentioned that the projector was staticky because the satellite it is connected to is broken.</Text>
     </RumorFact>
 
     <ExploreFact>
