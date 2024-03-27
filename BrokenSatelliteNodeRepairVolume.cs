@@ -104,8 +104,8 @@ namespace Axiom
                     Locator.GetPromptManager().RemoveScreenPrompt(_interactReceiver._noCommandIconPrompt);
                 }
             }
-            _repairScreenPrompt.SetVisibility(isVisible);
-            _repairDetailsScreenPrompt.SetVisibility(isVisible);
+            if (_repairScreenPrompt != null) _repairScreenPrompt.SetVisibility(isVisible);
+            if (_repairDetailsScreenPrompt != null) _repairDetailsScreenPrompt.SetVisibility(isVisible);
         }
 
         private void OnDestroy()

@@ -26,8 +26,8 @@
     </RumorFact>
 
     <ExploreFact>
-      <ID>AICALE_MOON_WARDEN</ID>
-      <Text>I found a crater of asteroid. The crate is small and the asteroid is lodged in it.</Text>
+      <ID>AICALE_ASTEROID</ID>
+      <Text>I found a crater of asteroid. The crater is small and the asteroid is lodged in it.</Text>
     </ExploreFact>
   </Entry>
 </AstroObjectEntry>

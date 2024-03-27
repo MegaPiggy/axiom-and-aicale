@@ -4,6 +4,7 @@
   "starSystem": "Jam3",
   "Base": {
     "surfaceSize": 20,
+    "soiOverride": 662.4,
     "surfaceGravity": 2.016,
     "showMinimap": true,
     "hasMapMarker": true
@@ -47,7 +48,7 @@
     "signals": [
       {
         "audio": "audio/OW Space - Into The Unknown 100912 AP.ogg",
-        "parentPath": "Sector/Moon/WardenArea/Radio/Signal",
+        "parentPath": "Sector/Moon/Interior/WardenArea/Radio/Signal",
         "isRelativeToParent": true,
         "frequency": "Radio",
         "name": "Warden Radio",

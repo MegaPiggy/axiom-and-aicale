@@ -5,6 +5,7 @@
   "Base": {
     "surfaceSize": 115,
     "surfaceGravity": 6.624,
+    "soiOverride": 1324.8,
     "showMinimap": true,
     "hasMapMarker": true
   },
@@ -13,7 +14,7 @@
       {
         "revealFor": "both",
         "revealOn": "enter",
-        "parentPath": "Sector/IcePlanet/QuietTown",
+        "parentPath": "Sector/IcePlanet/Interior/QuietTown",
         "isRelativeToParent": true,
         "radius": 50,
         "reveals": [
@@ -23,7 +24,7 @@
       {
         "revealFor": "both",
         "revealOn": "enter",
-        "parentPath": "Sector/IcePlanet/EscapePod/EscapePodZone",
+        "parentPath": "Sector/IcePlanet/Interior/EscapePod/EscapePodZone",
         "isRelativeToParent": true,
         "radius": 50,
         "reveals": [
@@ -39,7 +40,7 @@
         "track": "music",
         "audio": "audio/Quiet Town 120412 AP.ogg",
         "isRelativeToParent": true,
-        "parentPath": "Sector/IcePlanet/QuietTown",
+        "parentPath": "Sector/IcePlanet/Interior/QuietTown",
         "position": {
           "x": 0,
           "y": 0,
@@ -53,7 +54,7 @@
       //  "track": "music",
       //  "audio": "audio/Observatory 062913 AP.ogg",
       //  "isRelativeToParent": true,
-      //  "parentPath": "Sector/IcePlanet/Observatory/MuseumVolume",
+      //  "parentPath": "Sector/IcePlanet/Interior/Observatory/MuseumVolume",
       //  "position": {
       //    "x": 0,
       //    "y": 0,
@@ -67,7 +68,7 @@
         "track": "music",
         "audio": "audio/Ancients (Long) 020613 AP.ogg",
         "isRelativeToParent": true,
-        "parentPath": "Sector/IcePlanet/EscapePod/EscapePodZone",
+        "parentPath": "Sector/IcePlanet/Interior/EscapePod/EscapePodZone",
         "position": {
           "x": 0,
           "y": 0,
@@ -188,7 +189,7 @@
     "signals": [
       {
         "audio": "audio/AlienBeacon_Source2.wav",
-        "parentPath": "Sector/IcePlanet/EscapePod/Exterior/EscapePod/EscapePod1/EscapePodSignal",
+        "parentPath": "Sector/IcePlanet/Interior/EscapePod/Exterior/EscapePod/EscapePod1/EscapePodSignal",
         "isRelativeToParent": true,
         "frequency": "EscapePod",
         "name": "Alpha Escape Pod",
@@ -201,7 +202,7 @@
       },
       {
         "audio": "audio/Observatory 062913 AP.ogg",
-        "parentPath": "Sector/IcePlanet/QuietTown/Radio/Signal",
+        "parentPath": "Sector/IcePlanet/Interior/QuietTown/Radio/Signal",
         "isRelativeToParent": true,
         "frequency": "Radio",
         "name": "Quiet Town Radio",
@@ -210,7 +211,7 @@
       },
       {
         "audio": "audio/alien_geiger_counter.ogg",
-        "parentPath": "Sector/IcePlanet/QuietTown/SatelliteDish_V4/DishBeacon",
+        "parentPath": "Sector/IcePlanet/Interior/QuietTown/SatelliteDish_V4/DishBeacon",
         "isRelativeToParent": true,
         "frequency": "Radio",
         "name": "Quiet Town Satellite Dish",
@@ -222,7 +223,7 @@
       },
       {
         "audio": "audio/OW Banjo No Verb 050913.ogg",
-        "parentPath": "Sector/IcePlanet/TreeTravelers/Archeologist/ArcheologistMaster_banjo_anm/ArcheologistMaster_Rig:Hips/ArcheologistMaster_Rig:Spine/ArcheologistMaster_Rig:Spine1/ArcheologistMaster_Rig:spine3_CTRL/ArcheologistMaster_Rig:RightArm/ArcheologistMaster_Rig:RightForeArm/ArcheologistMaster_Rig:RightHand/BanjoContainer",
+        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Archeologist/ArcheologistMaster_banjo_anm/ArcheologistMaster_Rig:Hips/ArcheologistMaster_Rig:Spine/ArcheologistMaster_Rig:Spine1/ArcheologistMaster_Rig:spine3_CTRL/ArcheologistMaster_Rig:RightArm/ArcheologistMaster_Rig:RightForeArm/ArcheologistMaster_Rig:RightHand/BanjoContainer",
         "isRelativeToParent": true,
         "frequency": "Traveler",
         "name": "Archeologist",
@@ -231,7 +232,7 @@
       },
       {
         "audio": "audio/OW Drums No Verb 050913.ogg",
-        "parentPath": "Sector/IcePlanet/TreeTravelers/Astronomer/Astronomer_drum_anm/Drum/Signal",
+        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Astronomer/Astronomer_drum_anm/Drum/Signal",
         "isRelativeToParent": true,
         "frequency": "Traveler",
         "name": "Astronomer",
@@ -240,7 +241,7 @@
       },
       {
         "audio": "audio/OW Flute No Verb 050913.ogg",
-        "parentPath": "Sector/IcePlanet/TreeTravelers/Zen/Traveller_Zen_flute_anm/FluteRoot/Flute/Signal",
+        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Zen/Traveller_Zen_flute_anm/FluteRoot/Flute/Signal",
         "isRelativeToParent": true,
         "frequency": "Traveler",
         "name": "Zen",
@@ -250,7 +251,7 @@
       },
       {
         "audio": "audio/OW Harmonica No Verb 050913.ogg",
-        "parentPath": "Sector/IcePlanet/TreeTravelers/Woodsman/Woodsman_Harmonica_AnmV2/HarmonicaRoot/HarmonicaSignal",
+        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Woodsman/Woodsman_Harmonica_AnmV2/HarmonicaRoot/HarmonicaSignal",
         "isRelativeToParent": true,
         "frequency": "Traveler",
         "name": "Woodsman",
@@ -290,7 +291,7 @@
   "Spawn": {
     "playerSpawn": {
       "isRelativeToParent": true,
-      "parentPath": "Sector/IcePlanet/QuietTown/Prefab_Axiom_Campfire/PlayerSpawn",
+      "parentPath": "Sector/IcePlanet/Interior/QuietTown/Prefab_Axiom_Campfire/PlayerSpawn",
       "position": {
         "x": 0,
         "y": 1,
@@ -300,7 +301,7 @@
     },
     "shipSpawn": {
       "isRelativeToParent": true,
-      "parentPath": "Sector/IcePlanet/QuietTown/LandingPad/ShipSpawn"
+      "parentPath": "Sector/IcePlanet/Interior/QuietTown/LandingPad/ShipSpawn"
     }
   },
   "extras": { "farFromSun": true }

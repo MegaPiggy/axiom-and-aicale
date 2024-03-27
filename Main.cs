@@ -1,6 +1,8 @@
 ﻿using Epic.OnlineServices;
+using HarmonyLib;
 using NewHorizons.Components.Orbital;
 using NewHorizons.Handlers;
+using NewHorizons.Utility;
 using NewHorizons.Utility.OWML;
 using OWML.Common;
 using OWML.ModHelper;
@@ -8,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -18,6 +21,7 @@ namespace Axiom
     {
         private static Main instance;
         private INewHorizons _newHorizons;
+        public static IModConsole ConsoleInstance => instance.ModHelper.Console;
         public static INewHorizons NewHorizonsInstance => instance._newHorizons;
 
         private void Awake()
@@ -139,6 +143,7 @@ namespace Axiom
 
             LoadAllClips(); //load audio
 
+            new HarmonyLib.Harmony("MegaPiggy.Axiom").PatchAll(Assembly.GetExecutingAssembly());
             ModHelper.HarmonyHelper.AddPostfix<AudioManager>(nameof(AudioManager.Awake), typeof(Main), nameof(Main.ReplaceInAudioManager));
             ModHelper.HarmonyHelper.AddPostfix<AudioLibrary>(nameof(AudioLibrary.BuildAudioEntryDictionary), typeof(Main), nameof(Main.ReplaceInAudioLibrary));
 
@@ -173,7 +178,7 @@ namespace Axiom
         private void OnBrokenSatelliteLoaded(GameObject brokenSatellite)
         {
             ModHelper.Console.WriteLine("Broken Satellite has loaded", MessageType.Info);
-            brokenSatellite.AddComponent<AlignWithJamSun>();
+            //brokenSatellite.AddComponent<AlignWithJamSun>();
             brokenSatellite.GetComponent<Rigidbody>().mass = 10;
             var astroObject = brokenSatellite.GetComponent<NHAstroObject>();
             astroObject._primaryBody._satellite = astroObject;
@@ -223,6 +228,48 @@ namespace Axiom
             AudioClip audioClip = instance.ModHelper.Assets.GetAudio(path); //Else load it
             LoadedClips[path] = audioClip;
             return audioClip;
+        }
+    }
+
+    [HarmonyPatch(typeof(OWExtensions), nameof(OWExtensions.Assert), new Type[] { typeof(Collider), typeof(LayerMask), typeof(bool) })]
+    public static class AssertPatch
+    {
+        public static void Prefix(Collider collider, LayerMask layerMask, bool isTrigger)
+        {
+            if (!OWLayerMask.IsLayerInMask(collider.gameObject.layer, layerMask))
+            {
+                Main.ConsoleInstance.WriteLine("\"" + collider.transform.GetPath() + "\" collider is not in the \"" + LayerMask.LayerToName(layerMask.value) + "\" | #" + layerMask.value + " LayerMask!", MessageType.Error);
+            }
+            if (collider.isTrigger != isTrigger)
+            {
+                Main.ConsoleInstance.WriteLine("\"" + collider.transform.GetPath() + "\" isTrigger should be set to " + isTrigger, MessageType.Error);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Sector), nameof(Sector.Awake))]
+    public static class SectorPatch
+    {
+        public static void Prefix(Sector __instance)
+        {
+            var triggerRoot = __instance._triggerRoot;
+            if (triggerRoot == null)
+            {
+                Main.ConsoleInstance.WriteLine(__instance.transform.GetPath() + " does not have a trigger root. Defaulting to self.", MessageType.Warning);
+                triggerRoot = __instance.gameObject;
+            }
+            var proximityTrigger = triggerRoot.GetComponent<ProximityTrigger>();
+            if (proximityTrigger != null)
+            {
+                return;
+            }
+            var owTriggerVolume = triggerRoot.GetComponent<OWTriggerVolume>();
+            if (owTriggerVolume != null)
+            {
+                return;
+            }
+
+            Main.ConsoleInstance.WriteLine("Could not find any triggers for Sector " + __instance.transform.GetPath(), MessageType.Error);
         }
     }
 }

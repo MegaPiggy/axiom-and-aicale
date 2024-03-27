@@ -55,7 +55,7 @@
     "siderealPeriod": 1,
     "showOrbitLine": true,
     "dottedOrbitLine": true,
-    //"isTidallyLocked": true,
+    "isTidallyLocked": true,
     "orbitLineFadeStartDistance": 3312
   },
   "Volumes": {
