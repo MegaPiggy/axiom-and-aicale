@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="NewHorizons">
-      <HintPath>$(AppData)\OuterWildsModManager\OWML\Mods\xen.NewHorizons\NewHorizons.dll</HintPath>
+      <HintPath>dll\NewHorizons.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
