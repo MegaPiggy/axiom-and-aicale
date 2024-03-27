@@ -57,7 +57,7 @@
         "track": "music",
         "audio": "audio/Ancients (Long) 020613 AP.ogg",
         "isRelativeToParent": true,
-        "parentPath": "Sector/IcePlanet/EscapePodZone",
+        "parentPath": "Sector/IcePlanet/EscapePod/EscapePodZone",
         "position": {
           "x": 0,
           "y": 0,

@@ -1,6 +1,7 @@
 ﻿using Epic.OnlineServices;
 using NewHorizons.Components.Orbital;
 using NewHorizons.Handlers;
+using NewHorizons.Utility.OWML;
 using OWML.Common;
 using OWML.ModHelper;
 using System;
@@ -9,6 +10,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Axiom
 {
@@ -128,6 +130,8 @@ namespace Axiom
         };
         public const int EndOfTime = (int)AudioType.EndOfTime;
 
+        public static bool AlphaSFX = true;
+
         private void Start()
         {
             _newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
@@ -147,10 +151,11 @@ namespace Axiom
                     else if (name == "Broken Satellite") OnBrokenSatelliteLoaded(_newHorizons.GetPlanet("Broken Satellite"));
                 }
             });
+        }
 
-
-            //I was gonna do this but I don't want anything static or bramble related to mess stuff up
-            //ModHelper.Events.Unity.FireInNUpdates(IgnoreCompat, 2);
+        public override void Configure(IModConfig config)
+        {
+            AlphaSFX = config.GetSettingsValue<bool>("alphaSFX");
         }
 
         private void OnAxiomLoaded(GameObject axiom)
@@ -179,17 +184,9 @@ namespace Axiom
             satelliteSnapshot.gameObject.SetActive(true);
         }
 
-        [Obsolete("I was gonna do this but I don't want anything static or bramble related to mess stuff up")]
-        private void IgnoreCompat()
-        {
-            ModHelper.Console.WriteLine("Ignoring inclination lock.", MessageType.Info);
-            var axiom = NewHorizons.Main.BodyDict["Jam3"].First(body => body.Config.name == "Axiom");
-            var orbit = axiom.Config.Orbit;
-            orbit.inclination = 66.24f;
-        }
-
         public static void ReplaceInAudioManager(AudioManager __instance)
         {
+            if (!AlphaSFX) return;
             //The audio dictionary is a dictionary containing all of the sounds, matched to the int value of the AudioType enum
             foreach (var pair in AudiosToReplace)
             {
@@ -204,6 +201,7 @@ namespace Axiom
 
         public static void ReplaceInAudioLibrary(ref Dictionary<int, AudioLibrary.AudioEntry> __result)
         {
+            if (!AlphaSFX) return;
             //The audio dictionary is a dictionary containing all of the sounds, matched to the int value of the AudioType enum
             foreach (var pair in AudiosToReplace)
             {

@@ -1,4 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/config_schema.json",
-  "enabled": true
+  "enabled": true,
+  "settings": {
+    "alphaSFX": {
+      "title": "Alpha SFX",
+      "type": "toggle",
+      "value": true,
+      "tooltip": "My mod replaces some of the audio with alpha versions. If you don't want this then turn it off here."
+    }
+  }
 }
