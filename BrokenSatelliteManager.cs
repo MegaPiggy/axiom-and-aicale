@@ -64,7 +64,7 @@ namespace Axiom
             if (_repairCount >= _satelliteNodes.Length)
             {
                 DialogueConditionManager.SharedInstance.SetConditionState("PostAxiomBrokenSatellite", conditionState: true);
-                Locator.GetShipLogManager().RevealFact("AXION_BROKEN_SATELLITE_X2");
+                Locator.GetShipLogManager().RevealFact("AXIOM_BROKEN_SATELLITE_X2");
                 foreach (var light in _antennaLights) light.enabled = true;
                 _cameraNoiseEffect.enabled = false;
                 _owAudioSource.PlayOneShot(AudioType.TH_ZeroGTrainingAllRepaired, 2);
@@ -104,7 +104,7 @@ namespace Axiom
             {
                 UpdateNotification();
                 GlobalMessenger.FireEvent("EnterAxiomBrokenSatellite");
-                Locator.GetShipLogManager().RevealFact("AXION_BROKEN_SATELLITE");
+                Locator.GetShipLogManager().RevealFact("AXIOM_BROKEN_SATELLITE");
             }
         }
 

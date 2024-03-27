@@ -1,3 +1,11 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json"
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json",
+  "subtitlePath": "subtitle.png",
+  "credits": [
+    "MegaPiggy#Mod Creator",
+    "Outer Wilds Alpha#Based off"
+  ],
+  "preloadAssetBundles": [
+    "planets/axiomaicale.rem"
+  ]
 }

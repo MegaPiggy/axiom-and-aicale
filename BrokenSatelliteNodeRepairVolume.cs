@@ -91,7 +91,7 @@ namespace Axiom
 
         private void SetPromptVisibility(bool isVisible)
         {
-            if (_interactReceiver != null && )
+            if (_interactReceiver != null)
             {
                 if (_interactReceiver._screenPrompt != null)
                 {

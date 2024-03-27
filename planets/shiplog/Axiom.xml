@@ -22,12 +22,14 @@
 
     <RumorFact>
       <ID>AXIOM_TRAVELER_BASE_RUMOR</ID>
-      <Text>I found a village of people.</Text>
+      <SourceID>AXIOM_VILLAGE</SourceID>
+      <Text>I heard there is resting spot for the astronauts.</Text>
     </RumorFact>
 
     <RumorFact>
       <ID>AXIOM_TRAVELER_BASE_RUMOR_X2</ID>
-      <Text>I heard the base is resting spot for the travelers.</Text>
+      <SourceID>AXIOM_VILLAGE</SourceID>
+      <Text>The base is located on the opposite side of Axiom from the Village.</Text>
     </RumorFact>
 
     <ExploreFact>
@@ -37,19 +39,73 @@
   </Entry>
 
   <Entry>
+    <ID>AXIOM_BROKEN_SATELLITE</ID>
+    <Name>Axiom Satellite</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+
+    <RumorFact>
+      <ID>AXIOM_BROKEN_SATELLITE_RUMOR</ID>
+      <SourceID>AXIOM_VILLAGE</SourceID>
+      <RumorName>Broken Satellite</RumorName>
+      <Text>According to the Curator and Village Leader there is a satellite orbiting Axiom that needs repairs.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>AXIOM_BROKEN_SATELLITE</ID>
+      <Text>I orbited with the satellite.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>AXIOM_BROKEN_SATELLITE_X2</ID>
+      <Text>I fixed the broken satellite. The projector at the Observatory works again.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
     <ID>AXIOM_ESCAPE_POD</ID>
     <Name>Axiom Escape Pod</Name>
 
     <Curiosity>AXIOM_AICALE</Curiosity>
 
-    <ExploreFact>
+    <RumorFact>
       <ID>AXIOM_ESCAPE_POD_RUMOR</ID>
+      <SourceID>AXIOM_VILLAGE</SourceID>
       <Text>I heard about a crashed escape pod.</Text>
-    </ExploreFact>
+    </RumorFact>
 
     <ExploreFact>
       <ID>AXIOM_ESCAPE_POD</ID>
       <Text>I found the escape pod.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>AXIOM_ESCAPE_POD_X2</ID>
+      <Text>I learned how the villagers got here. They modified the ancient escape pod and shot it towards this system.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>GIESELWALD</ID>
+    <Name>Gieselwald</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+
+    <ExploreFact>
+      <ID>GIESELWALD</ID>
+      <Text>I found a talking jellyfish under the ice.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>EORNOST</ID>
+    <Name>Eornost</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+
+    <ExploreFact>
+      <ID>EORNOST</ID>
+      <Text>I found a talking anglerfish under the ice.</Text>
     </ExploreFact>
   </Entry>
 </AstroObjectEntry>

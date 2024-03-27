@@ -19,6 +19,16 @@
         "reveals": [
           "AXIOM_VILLAGE"
         ]
+      },
+      {
+        "revealFor": "both",
+        "revealOn": "enter",
+        "parentPath": "Sector/IcePlanet/EscapePod/EscapePodZone",
+        "isRelativeToParent": true,
+        "radius": 50,
+        "reveals": [
+          "AXIOM_ESCAPE_POD"
+        ]
       }
     ],
     "audioVolumes": [
@@ -269,6 +279,13 @@
     "trueAnomaly": 6624,
     "showOrbitLine": true,
     "siderealPeriod": 6.624
+  },
+  "ShipLog": {
+    "mapMode": {
+      "revealedSprite": "planets/shiplog/mapMode/Axiom.png"
+    },
+    "spriteFolder": "planets/shiplog/entrySprites",
+    "xmlFile": "planets/shiplog/Axiom.xml"
   },
   "Spawn": {
     "playerSpawn": {

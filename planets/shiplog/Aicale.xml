@@ -6,11 +6,28 @@
     <Name>Moon Warden</Name>
 
     <Curiosity>AXIOM_AICALE</Curiosity>
-    <isCuriosity/>
 
     <ExploreFact>
       <ID>AICALE_MOON_WARDEN</ID>
       <Text>I met the moon warden living on Aicale.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>AICALE_ASTEROID</ID>
+    <Name>Asteroid Crater</Name>
+
+    <Curiosity>AXIOM_AICALE</Curiosity>
+
+    <RumorFact>
+      <ID>AICALE_ASTEROID_RUMOR</ID>
+      <SourceID>AXIOM_VILLAGE</SourceID>
+      <Text>I heard from the Village Leader that there is an asteroid crashed down on Aicale</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>AICALE_MOON_WARDEN</ID>
+      <Text>I found a crater of asteroid. The crate is small and the asteroid is lodged in it.</Text>
     </ExploreFact>
   </Entry>
 </AstroObjectEntry>

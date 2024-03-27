@@ -67,5 +67,12 @@
     "trueAnomaly": 6624,
     "showOrbitLine": true,
     "isTidallyLocked": true
+  },
+  "ShipLog": {
+    "mapMode": {
+      "revealedSprite": "planets/shiplog/mapMode/Aicale.png"
+    },
+    "spriteFolder": "planets/shiplog/entrySprites",
+    "xmlFile": "planets/shiplog/Aicale.xml"
   }
 }
