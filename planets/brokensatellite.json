@@ -33,7 +33,7 @@
     ],
     "signals": [
       {
-        "audio": "audio/alien_geiger_counter",
+        "audio": "audio/alien_geiger_counter.ogg",
         "detectionRadius": 100,
         "identificationRadius": 30,
         "sourceRadius": 10,
