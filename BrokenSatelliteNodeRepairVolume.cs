@@ -91,10 +91,19 @@ namespace Axiom
 
         private void SetPromptVisibility(bool isVisible)
         {
-            _interactReceiver._screenPrompt.SetVisibility(isVisible: false);
-            _interactReceiver._noCommandIconPrompt.SetVisibility(isVisible: false);
-            Locator.GetPromptManager().RemoveScreenPrompt(_interactReceiver._screenPrompt);
-            Locator.GetPromptManager().RemoveScreenPrompt(_interactReceiver._noCommandIconPrompt);
+            if (_interactReceiver != null && )
+            {
+                if (_interactReceiver._screenPrompt != null)
+                {
+                    _interactReceiver._screenPrompt.SetVisibility(isVisible: false);
+                    Locator.GetPromptManager().RemoveScreenPrompt(_interactReceiver._screenPrompt);
+                }
+                if (_interactReceiver._noCommandIconPrompt != null)
+                {
+                    _interactReceiver._noCommandIconPrompt.SetVisibility(isVisible: false);
+                    Locator.GetPromptManager().RemoveScreenPrompt(_interactReceiver._noCommandIconPrompt);
+                }
+            }
             _repairScreenPrompt.SetVisibility(isVisible);
             _repairDetailsScreenPrompt.SetVisibility(isVisible);
         }
