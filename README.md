@@ -8,4 +8,4 @@ This is my entry for the 3rd Outer Wilds Jam and also is my first "story" mod so
 
 This mod changes some sound to their Alpha equivalents. If you dislike them you can change it in the mod settings.
 
-![image](https://github.com/MegaPiggy/axiom-and-aicale/assets/34462599/9059671f-8e62-4f5c-8c3c-19c36b330be9)
+![Logo with planet, moon, and satellite in background](https://raw.githubusercontent.com/MegaPiggy/axiom-and-aicale/main/AxiomImage.png)
