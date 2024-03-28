@@ -43,10 +43,13 @@
     <None Include="translations\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="systems\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="NewHorizons">
-      <HintPath>..\..\..\AppData\Roaming\OuterWildsModManager\OWML\Mods\xen.NewHorizons\NewHorizons.dll</HintPath>
+      <HintPath>dll\NewHorizons.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

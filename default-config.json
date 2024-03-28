@@ -5,8 +5,8 @@
     "alphaSFX": {
       "title": "Alpha SFX",
       "type": "toggle",
-      "value": true,
-      "tooltip": "My mod replaces some of the audio with alpha versions. If you don't want this then turn it off here."
+      "value": false,
+      "tooltip": "My mod can replace some of the audio with alpha versions. Requires the loop to reset to take effect."
     }
   }
 }
