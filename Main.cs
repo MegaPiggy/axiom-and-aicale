@@ -36,6 +36,10 @@ namespace Axiom
                 "audio/End Times (Short) 041013 AP.wav"
             },
             {
+                AudioType.Travel_Theme,
+                "audio/OW 110912 AP.wav"
+            },
+            {
                 AudioType.ShipCockpitAutopilotActivate,
                 "audio/Computer_Interface_Retro.wav"
             },
