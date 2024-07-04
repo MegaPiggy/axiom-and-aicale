@@ -9,6 +9,9 @@
     "showMinimap": true,
     "hasMapMarker": true
   },
+  "removeChildren": [
+      "Sector/Air"
+  ],
   "Atmosphere": {
     "size": 24,
     "atmosphereTint": {
