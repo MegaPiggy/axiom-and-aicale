@@ -172,6 +172,7 @@ namespace Axiom
             ModHelper.Console.WriteLine("Axiom has loaded", MessageType.Info);
             axiom.transform.Find("Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/TwoStoryCabin (1)/AirCurrent").transform.localPosition = new Vector3(-4.5452f, 9.061f, 1.25f);
             axiom.transform.Find("Sector/IcePlanet/Interior/Details/TreeHouseIsland").gameObject.SetActive(false); // Disable for now until I can make it less laggy
+            HandleMaterials(axiom);
         }
 
         private void OnAicaleLoaded(GameObject aicale)
@@ -179,6 +180,7 @@ namespace Axiom
             ModHelper.Console.WriteLine("Aicale has loaded", MessageType.Info);
             var astroObject = aicale.GetComponent<NHAstroObject>();
             astroObject._primaryBody._moon = astroObject;
+            HandleMaterials(aicale);
         }
 
         private void OnBrokenSatelliteLoaded(GameObject brokenSatellite)
@@ -195,6 +197,124 @@ namespace Axiom
             satelliteSnapshot._satelliteCamera = brokenSatellite.GetComponentInChildren<OWCamera>();
             satelliteSnapshot._probeMesh = brokenSatellite.GetComponentInChildren<BrokenSatelliteManager>().transform.Find("BrokenSatellite/center").GetComponent<MeshRenderer>();
             satelliteSnapshot.gameObject.SetActive(true);
+            HandleMaterials(brokenSatellite);
+        }
+
+        public static void HandleMaterials(GameObject gameObject)
+        {
+            instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                SurfaceManager surfaceManager = GameObject.FindObjectOfType<SurfaceManager>();
+
+                var handled = new List<string>();
+
+                var rndrs = gameObject.GetComponentsInChildren<MeshRenderer>(true);
+                foreach (var rndr in rndrs)
+                {
+                    foreach (var mat in rndr.sharedMaterials)
+                    {
+                        if (mat == null) continue;
+                        if (handled.Contains(mat.name)) continue;
+
+                        handled.Add(mat.name);
+
+                        SurfaceType type = GetSurfaceType(mat);
+                        if (type != SurfaceType.None)
+                        {
+                            surfaceManager._lookupTable.Add(mat, type);
+                        }
+                    }
+                }
+            });
+        }
+
+        public static SurfaceType GetSurfaceType(Material mat)
+        {
+            instance.ModHelper.Console.WriteLine("Surface material: \"" + mat.name + "\"", MessageType.Warning);
+            switch (mat.name)
+            {
+                case "Planet1Mtl":
+                case "SnowBrick1Mtl":
+                    return SurfaceType.Snow;
+                case "Ice1Mtl":
+                    return SurfaceType.Ice;
+
+                case "ElevatorShaft_Color_0":
+                case "SatelliteDish_Winch_Color":
+                case "Wood1Mtl":
+                case "Wood2Mtl":
+                case "WoodBeamMat":
+                case "DarkWood":
+                case "DoorFrameAndWindow":
+                case "RoofFoundation":
+                case "Railing":
+                    return SurfaceType.Wood;
+
+                case "shack_mat":
+                case "cabin_mat":
+                case "porchCabin_mat":
+                case "Cabin1Mtl":
+                case "FloorPlanks":
+                case "RoofPlanks":
+                case "SidePlanks":
+                    return SurfaceType.Planks;
+
+                case "Skull_Color":
+                    return SurfaceType.Bone;
+
+                case "TreeLeaves":
+                case "OuterLeaves":
+                case "InnerLeaves":
+                    return SurfaceType.Grass;
+
+                case "RadioSpeakerMat":
+                case "OuterRug":
+                case "InnerRug":
+                    return SurfaceType.Fabric;
+
+                case "Pic1Mtl":
+                    return SurfaceType.GrittyRock;
+
+                case "Icosphere0031Mtl":
+                    return SurfaceType.QuantumRock;
+
+                case "Part1Mtl":
+                    return SurfaceType.Obsidian;
+
+                case "CrystalMat":
+                case "CrystalSconceMat":
+                case "crystalSpireMat":
+                case "AncientCrystalMat":
+                    return SurfaceType.Crystal;
+
+                case "HoloProjectorMat":
+                    return SurfaceType.MetalNomai;
+
+                case "Glass":
+                case "Glass_0":
+                case "FishTankGlass":
+                    return SurfaceType.Glass;
+
+                case "FishTankMat":
+                case "Plaque_Color":
+                case "plaqueMat":
+                case "Metal1Mtl":
+                case "SatelliteDish_Color":
+                case "RadioMat":
+                case "RadioAntennaMat":
+                case "CairnLamp_Color":
+                case "StreetlampMat":
+                    return SurfaceType.Metal;
+
+                case "LandingPlatform_Color":
+                case "Well":
+                    return SurfaceType.Stone;
+
+                case "WellWater":
+                    return SurfaceType.Water;
+
+                default: return SurfaceType.None;
+            }
         }
 
         public static void ReplaceInAudioManager(AudioManager __instance)
