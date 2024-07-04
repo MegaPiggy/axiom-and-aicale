@@ -1,0 +1,103 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Rocket Scientist</NameField>
+
+  <DialogueNode>
+    <Name>LaunchPad</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <SetCondition>TalkedToRocketScientist</SetCondition>
+    <Dialogue>
+      <Page>We have the launch pad over there but we haven't used it in a bit.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I'm using it</Text>
+        <DialogueTarget>USING</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Why not?</Text>
+        <DialogueTarget>WAITING</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MAIN</Name>
+    <EntryCondition>TalkedToRocketScientist</EntryCondition>
+    <Dialogue>
+      <Page>Anything else I can do for ya?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Why isn't the launchpad being used?</Text>
+        <DialogueTarget>WAITING</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Bye</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>USING</Name>
+    <Dialogue>
+      <Page>Well glad to see it is getting some use.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Why isn't it being used?</Text>
+        <DialogueTarget>WAITING</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>You're welcome</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WAITING</Name>
+    <Dialogue>
+      <Page>There isn't much reason for anything to land there</Page>
+      <Page>The astronauts sometimes land on it but they are usually out exploring other planets or resting at their base.</Page>
+      <Page>I am waiting until I can make another rocket ship. Takes a while to gather materials for it sadly.</Page>
+      <Page>Maybe Coach can train a new astronaut to fly it.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Where can I find the astronaut's base?</Text>
+        <DialogueTarget>BASE</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Well I hope you can built it soon.</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_TRAVELER_BASE_RUMOR</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BASE</Name>
+    <Dialogue>
+      <Page>It should be on the other side of Axiom. There is a campfire there so look for the rising smoke.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Thanks</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_TRAVELER_BASE_RUMOR_X2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BYE</Name>
+    <Dialogue>
+      <Page>Farewell</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,80 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Archaeologist</NameField>
+
+  <DialogueNode>
+    <Name>FIRST</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Hey there. Warm yourself by the fire. It's good to have company on a night like this.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What instrument is that?</Text>
+        <DialogueTarget>INSTRUMENT</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What is your job about?</Text>
+        <DialogueTarget>JOB</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'll see you later.</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_TRAVELER_BASE</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MAIN</Name>
+    <Dialogue>
+      <Page>What else can I do for you?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What instrument is that?</Text>
+        <DialogueTarget>INSTRUMENT</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What is your job about?</Text>
+        <DialogueTarget>JOB</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'll see you later.</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INSTRUMENT</Name>
+    <Dialogue>
+      <Page>I'm playing the banjo. I like it because it playing it is similar to digging through layers of history, each pluck unearthing a new story. Simple as that.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I agree</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>JOB</Name>
+    <Dialogue>
+      <Page>My job is to study ancient civilizations and uncover artifacts or fossils that are buried in the ground.</Page>
+      <Page>Nowadays I don't do much as there isn't much to study.</Page>
+      <Page>Back in our old solar system there was an ancient civilization but we didn't figure out much about them other than how to modify their tech.</Page>
+    </Dialogue>
+    <DialogueTarget>MAIN</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BYE</Name>
+    <Dialogue>
+      <Page>Bye bye.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

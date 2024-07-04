@@ -1,0 +1,25 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Telescope Kid</NameField>
+
+  <DialogueNode>
+    <Name>Alien</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Whoa, are you an alien? I've never seen anything like you before!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Indeed I am. Is that a telescope?</Text>
+        <DialogueTarget>Telescope</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Telescope</Name>
+    <Dialogue>
+      <Page>Yeah! I love looking at the stars. My telescope helps me see the planets and the galaxies far, far away.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,25 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Outfitter</NameField>
+
+  <DialogueNode>
+    <Name>GetHere</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>What the… an alien? How did you get here?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Flying</Text>
+        <DialogueTarget>Flying</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>Flying</Name>
+    <Dialogue>
+      <Page>Of course. The most obvious answer.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

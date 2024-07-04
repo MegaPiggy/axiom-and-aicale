@@ -1,0 +1,14 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Our old home planet was the only one in that Solar System with an oxygen-rich atmosphere, which meant our astronauts must carry their own supply with them.</Page>
+      <Page>These tanks are designed to automatically refill whenever oxygen is present, which allows the wearer to avoid an incredibly painful death-by-asphyxiation.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

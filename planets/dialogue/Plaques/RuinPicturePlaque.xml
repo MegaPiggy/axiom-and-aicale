@@ -1,0 +1,14 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>In this picture you can see a ruin. It was once a building made by the ancient people who used to dwell in our old Solar System.</Page>
+      <Page>This is the only remnant of those ruins as we didn't take anything from them with us.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

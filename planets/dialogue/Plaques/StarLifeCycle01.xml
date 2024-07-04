@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>These five displays depict the life cycle of a massive star similar to our sun. Such a star will remain in the Main Sequence phase the longest, as it gradually fuses the hydrogen in its core into helium.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

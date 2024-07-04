@@ -1,0 +1,16 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>This ancient statue is the subject of a heated debate.</Page>
+      <Page>The level-headed among us adhere to the obvious explanation that the statue simply phase-shifts whenever you look away from it.</Page>
+      <Page>That hasn't stopped our more imaginative thinkers from making the (ridiculous) argument that it actually exists in every possible configuration simultaneously and only collapses to a single state while it is being observed.</Page>
+      <Page>Whatever the explanation, both sides agree that the effect is extremely creepy.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

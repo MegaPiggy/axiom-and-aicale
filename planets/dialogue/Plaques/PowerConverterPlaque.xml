@@ -1,0 +1,14 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>All of our spacecraft are powered by the intense chemical reaction that takes place inside this highly reinforced energy converter.</Page>
+      <Page>Originally the conversion chamber wasn't reinforced at all, but that changed after an early model successfully converted 78% of the ship's hull into usable energy.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

@@ -1,0 +1,135 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Gieselwald</NameField>
+
+  <DialogueNode>
+    <Name>MAGIC</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Hey it's me Gieselwald the magic talking jellyfish.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I hate you.</Text>
+        <DialogueTarget>Hate</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I love you.</Text>
+        <DialogueTarget>Love</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Are you related to Eornost?</Text>
+        <RequiredPersistentCondition>HasTalkedToEornost</RequiredPersistentCondition>
+        <DialogueTarget>Eornost</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I have to go.</Text>
+        <RequiredCondition>TalkedAboutEornost</RequiredCondition>
+        <DialogueTarget>SayHi</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I have to go.</Text>
+        <CancelledCondition>TalkedAboutEornost</CancelledCondition>
+        <DialogueTarget>Bye</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>GIESELWALD</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MAIN</Name>
+    <Dialogue>
+      <Page>Did you want to talk about anything else.</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I hate you.</Text>
+        <DialogueTarget>Hate</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I love you.</Text>
+        <DialogueTarget>Love</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Are you related to Eornost?</Text>
+        <RequiredPersistentCondition>HasTalkedToEornost</RequiredPersistentCondition>
+        <CancelledCondition>TalkedAboutEornost</CancelledCondition>
+        <DialogueTarget>Eornost</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I have to go.</Text>
+        <RequiredCondition>TalkedAboutEornost</RequiredCondition>
+        <ConditionToSet>SayHiToEornost</ConditionToSet>
+        <DialogueTarget>SayHi</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I have to go.</Text>
+        <CancelledCondition>TalkedAboutEornost</CancelledCondition>
+        <DialogueTarget>Bye</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Hate</Name>
+    <Dialogue>
+      <Page>I'm sorry but I'm taken.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Oh my bad, they must consider themselves very lucky.</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Love</Name>
+    <Dialogue>
+      <Page>Okay... That's pretty rude bro...</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>You're right. I apologize.</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Okay nevermind I hate you.</Text>
+        <DialogueTarget>Hate</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Eornost</Name>
+    <SetCondition>TalkedAboutEornost</SetCondition>
+    <Dialogue>
+      <Page>Not related but we are in a relationship.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Good for you</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SayHi</Name>
+    <SetCondition>SayHiToEornost</SetCondition>
+    <Dialogue>
+      <Page>Okay, say hi to Eornost for me!</Page>
+      <ConditionToSet>SayHiToEornost</ConditionToSet>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Bye</Name>
+    <Dialogue>
+      <Page>Okay</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,79 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Zen</NameField>
+
+  <DialogueNode>
+    <Name>FIRST</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Sit, and let the warmth of the fire embrace you.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What instrument is that?</Text>
+        <DialogueTarget>INSTRUMENT</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What is your job about?</Text>
+        <DialogueTarget>JOB</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'll see you later.</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_TRAVELER_BASE</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MAIN</Name>
+    <Dialogue>
+      <Page>What else can I do for you?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What instrument is that?</Text>
+        <DialogueTarget>INSTRUMENT</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What is your job about?</Text>
+        <DialogueTarget>JOB</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'll see you later.</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>JOB</Name>
+    <Dialogue>
+      <Page>My job is pretty easy. I just do miscellaneous tasks that Mission Control asks for.</Page>
+    </Dialogue>
+    <DialogueTarget>MAIN</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INSTRUMENT</Name>
+    <Dialogue>
+      <Page>I'm playing a flute. It is basically me if I were an instrument.</Page>
+      <Page>The flute has always been my companion on this journey through life. Its melodies speak to the soul.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I agree</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BYE</Name>
+    <Dialogue>
+      <Page>Bye bye.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,185 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Village Leader</NameField>
+
+  <DialogueNode>
+    <Name>WhoAreYou</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <SetCondition>TalkedToVillageLeader</SetCondition>
+    <Dialogue>
+      <Page>By the stars! What manner of being are you?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>A wandering traveler.</Text>
+        <DialogueTarget>Wandering</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I am Astronaut from the future!</Text>
+        <DialogueTarget>Future</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Future</Name>
+    <Dialogue>
+      <Page>Future? How'd you even get here?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I woke up in this solar system.</Text>
+        <DialogueTarget>Woke</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Woke</Name>
+    <Dialogue>
+      <Page>If you don't know how you got here then why would you be from the future?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Just a feeling.</Text>
+        <DialogueTarget>WanderingThen</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WanderingThen</Name>
+    <Dialogue>
+      <Page>Welcome to our little village then. Explore the planet or talk to the other villagers.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Where should I go first?</Text>
+        <DialogueTarget>WhereFirst</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wandering</Name>
+    <EntryCondition>TalkedToVillageLeader</EntryCondition>
+    <Dialogue>
+      <Page>Welcome to our little village. Explore the planet or talk to the other villagers.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Any problems?</Text>
+        <DialogueTarget>AnyProblems</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I fixed the satellite</Text>
+        <RequiredCondition>PostAxiomBrokenSatellite</RequiredCondition>
+        <DialogueTarget>SatelliteFixed</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where should I go first?</Text>
+        <DialogueTarget>WhereFirst</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I gotta go.</Text>
+        <DialogueTarget>Bye</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>AnyProblems</Name>
+    <Dialogue>
+      <Page>The only thing I can think of would be that broken satellite orbiting between the moon and here.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Why is it broken?</Text>
+        <DialogueTarget>BrokenSatellite</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_BROKEN_SATELLITE_RUMOR</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BrokenSatellite</Name>
+    <Dialogue>
+      <Page>It got hit by some asteroids. One asteroid ended up crashing into Aicale.</Page>
+      <Page>We don't have anyway to get up there and fix it.</Page>
+      <Page>We have astronauts but they just came back from an exploration so I didn't want to bother them yet.</Page>
+      <Page>I believe you may be able to restore it to working order.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I'll try</Text>
+        <DialogueTarget>Wandering</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AICALE_ASTEROID_RUMOR</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SatelliteFixed</Name>
+    <Dialogue>
+      <Page>Thank you! The Curator would happy to know the satellite snapshot is working again.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I'll let them know</Text>
+        <DialogueTarget>Wandering</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_BROKEN_SATELLITE_X2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WhereFirst</Name>
+    <Dialogue>
+      <Page>Maybe check out our crashed escape pod. We modified and launched it to get away from our dying star.</Page>
+      <Page>It should be in the direction that large signal dish is facing.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Anywhere else?</Text>
+        <DialogueTarget>Observatory</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Got it</Text>
+        <DialogueTarget>Wandering</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_ESCAPE_POD_RUMOR</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Observatory</Name>
+    <Dialogue>
+      <Page>Something else...</Page>
+      <Page>How about the observatory. It is on the other side of the village.</Page>
+      <Page>Basically the opposite direction of the escape pod.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Got it</Text>
+        <DialogueTarget>Wandering</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY_RUMOR</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Bye</Name>
+    <Dialogue>
+      <Page>See you later.</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

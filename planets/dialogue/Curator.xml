@@ -1,0 +1,99 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Curator</NameField>
+
+  <DialogueNode>
+    <Name>Culture</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <SetCondition>TalkedToCurator</SetCondition>
+    <Dialogue>
+      <Page>Well, isn't this a surprise! We don't get many extraterrestrial visitors in our village. What brings you here, traveler?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Just having a look around.</Text>
+        <DialogueTarget>LookAround</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I fixed the satellite.</Text>
+        <RequiredCondition>PostAxiomBrokenSatellite</RequiredCondition>
+        <DialogueTarget>SatelliteSnapshot</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Any problems?</Text>
+        <DialogueTarget>BrokenSatellite</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Bye</Text>
+        <DialogueTarget>SafeTravels</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BrokenSatellite</Name>
+    <Dialogue>
+      <Page>Recently I've been seeing only static on my projector near the entrance.</Page>
+      <Page>It is supposed to connect to the satellite orbiting the planet but it seems the signal is broken.</Page>
+      <Page>Could you go up there and fix it for me? I would ask the travelers but they are resting after exploring for a bit.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>No problem</Text>
+        <DialogueTarget>SafeTravels</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_BROKEN_SATELLITE_CURATOR_RUMOR</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SatelliteSnapshot</Name>
+    <Dialogue>
+      <Page>Oh thank you! The projector is finally gonna work again!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>You're welcome</Text>
+        <DialogueTarget>CheckItOut</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AXIOM_BROKEN_SATELLITE_X2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>CheckItOut</Name>
+    <Dialogue>
+      <Page>You should go check on the projector in front now that it is fixed.</Page>
+      <Page>It may not be too interesting but it is something.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Ok</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>LookAround</Name>
+    <Dialogue>
+      <Page>Well I hope you find the exhibits interesting.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Bye</Text>
+        <DialogueTarget>SafeTravels</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SafeTravels</Name>
+    <Dialogue>
+      <Page>Safe travels.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,91 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Moon Warden</NameField>
+
+  <DialogueNode>
+    <Name>Visitor</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <SetCondition>TalkedToMoonWarden</SetCondition>
+    <Dialogue>
+      <Page>Well, well, what do we have here? You're not from around these parts, are you?</Page>
+      <Page>It's not often I get visitors up here...you know, it being the moon and all. What can I do you for?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Where's that music coming from?</Text>
+        <DialogueTarget>Music</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Anything here worth checking out?</Text>
+        <DialogueTarget>CheckOut</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>So what is it you do here?</Text>
+        <DialogueTarget>DoHere</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AICALE_MOON_WARDEN</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>DoYouFor</Name>
+    <EntryCondition>TalkedToMoonWarden</EntryCondition>
+    <Dialogue>
+      <Page>What can I do you for?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Where's that music coming from?</Text>
+        <DialogueTarget>Music</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Anything here worth checking out?</Text>
+        <DialogueTarget>CheckOut</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>So what is it you do here?</Text>
+        <DialogueTarget>DoHere</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Gotta go.</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>AICALE_MOON_WARDEN</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Music</Name>
+    <Dialogue>
+      <Page>See that radio I cobbled together over there? I calibrated it to pick up the music being played back home.</Page>
+    </Dialogue>
+    <DialogueTarget>DoYouFor</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>CheckOut</Name>
+    <Dialogue>
+      <Page>Honestly, I think this place is pretty dull. I'm really the only thing here.</Page>
+    </Dialogue>
+    <DialogueTarget>DoYouFor</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>DoHere</Name>
+    <Dialogue>
+      <Page>I'm the warden of Aicale. I live here on the moon overseeing anything happening back on Axiom. Sometimes the travelers stop by for repairs.</Page>
+    </Dialogue>
+    <DialogueTarget>DoYouFor</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Fancy</Name>
+    <Dialogue>
+      <Page>Hey, fancy seeing you here...on the MOON!!!</Page>
+    </Dialogue>
+    <DialogueTarget>DoYouFor</DialogueTarget>
+  </DialogueNode>
+
+</DialogueTree>

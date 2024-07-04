@@ -1,0 +1,15 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Some of our own expedition gear actually incorporates technology we've reverse-engineered from ancient artifacts.</Page>
+      <Page>This Surveyor Probe Mk IV features a limited warp ability that has dramatically reduced the rate at which our astronauts lose them to the depths of space.</Page>
+      <Page>In theory, this warp technology should also work on organic lifeforms, but further experimentation has been recently hampered by a sudden shortage of volunteers.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>AXIOM_OBSERVATORY</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

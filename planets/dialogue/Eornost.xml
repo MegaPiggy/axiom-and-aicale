@@ -1,0 +1,127 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Eornost</NameField>
+  
+  <DialogueNode>
+    <Name>MAGIC</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <SetPersistentCondition>HasTalkedToEornost</SetPersistentCondition>
+    <Dialogue>
+      <Page>Hey it's me Eornost the magic talking anglerfish.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Eornost? Don't you mean Ernesto.</Text>
+        <DialogueTarget>ERNESTO</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Wow you can talk?</Text>
+        <DialogueTarget>TALK</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Gieselwald says hi.</Text>
+        <RequiredCondition>SayHiToEornost</RequiredCondition>
+        <DialogueTarget>Gieselwald</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'll see you later.</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <RevealFacts>
+      <FactID>EORNOST</FactID>
+    </RevealFacts>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>MAIN</Name>
+    <Dialogue>
+      <Page>Did you want to talk about anything else.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Eornost? Don't you mean Ernesto.</Text>
+        <DialogueTarget>ERNESTO</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Wow you can talk?</Text>
+        <DialogueTarget>TALK</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Gieselwald says hi.</Text>
+        <RequiredCondition>SayHiToEornost</RequiredCondition>
+        <DialogueTarget>Gieselwald</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'll see you later.</Text>
+        <DialogueTarget>BYE</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>ERNESTO</Name>
+    <Dialogue>
+      <Page>No, I am Eornost! The second anglerfish to ever live!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Only second?</Text>
+        <DialogueTarget>SECOND</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Cool...</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SECOND</Name>
+    <Dialogue>
+      <Page>Come on man. Do I look Spaceworthy to you?</Page>
+      <Page>The first anglerfish to ever live was Spaceworthy!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Cool...</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>TALK</Name>
+    <SetCondition>20YearComa</SetCondition>
+    <Dialogue>
+      <Page>No I can't. You must be mistaken.</Page>
+      <Page>That wasn't a joke. You've been in a coma for 20 years. WAKE UP!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What?!</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>BYE</Name>
+    <Dialogue>
+      <Page>Bye bye.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Gieselwald</Name>
+    <Dialogue>
+      <Page>Glad to hear they are doing alright.</Page>
+      <Page>We are a married couple.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Nice</Text>
+        <DialogueTarget>MAIN</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+</DialogueTree>

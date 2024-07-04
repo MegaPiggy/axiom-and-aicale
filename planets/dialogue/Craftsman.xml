@@ -1,0 +1,25 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Craftsman</NameField>
+
+  <DialogueNode>
+    <Name>Visitor</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Well, I'll be... You're not something you see every day! What brings you here, stranger?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I see you are looking at the stars.</Text>
+        <DialogueTarget>Stargazing</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Stargazing</Name>
+    <Dialogue>
+      <Page>I've spent many nights out here, studying the stars and marveling at their beauty. There's always something new to discover, something that makes you appreciate just how vast and wondrous the universe really is.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

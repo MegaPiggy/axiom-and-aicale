@@ -1,0 +1,33 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>Launching from dying solar system.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <Text>On trajectory to crash into exoplanet.</Text>
+  </TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>Successfully landed on exoplanet. Scanning planet for safety.</Text>
+	</TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <Text>It is covered in ice and a subsurface ocean beneath it. There is alien flora scattered across the surface and alien fauna below the ice.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <Text>Detecting a moon orbiting the planet.</Text>
+  </TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<Text>Opening the stasis pods and escape door.</Text>
+	</TextBlock>
+
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>AXIOM_ESCAPE_POD_X2</FactID>
+			<Condition>1, 2, 3, 4, 5, 6</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

@@ -1,0 +1,96 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Skeptic</NameField>
+
+  <DialogueNode>
+    <Name>Skeptical</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Who're you?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I come in peace.</Text>
+        <DialogueTarget>Expect</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Expect</Name>
+    <Dialogue>
+      <Page>Uh-huh, sure you do. You expect me to believe that?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I assure you, my intentions are purely peaceful.</Text>
+        <DialogueTarget>Why</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Why</Name>
+    <Dialogue>
+      <Page>And why should I trust you? You could be here to conquer us, or worse.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I have no interest in conquest</Text>
+        <DialogueTarget>IDK</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>IDK</Name>
+    <Dialogue>
+      <Page>I don't know... it all sounds too good to be true.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I am just exploring the planet.</Text>
+        <DialogueTarget>Well</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Well</Name>
+    <Dialogue>
+      <Page>Well, forgive me if I'm not convinced just yet. How do I know you're not just spinning a tale to lower our guard?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Allow me to earn your trust, one step at a time.</Text>
+        <DialogueTarget>Alright</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Alright</Name>
+    <SetCondition>SkepticEyeOnYou</SetCondition>
+    <Dialogue>
+      <Page>Alright, but I've got my eye on you. One wrong move, and you'll have the whole village to answer to.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Ok</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Eye</Name>
+    <EntryCondition>SkepticEyeOnYou</EntryCondition>
+    <Dialogue>
+      <Page>I've got my eye on you. One wrong move, and you'll have the whole village to answer to.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Ok</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+</DialogueTree>
