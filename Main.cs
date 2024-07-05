@@ -257,10 +257,14 @@ namespace Axiom
                 case "FloorPlanks":
                 case "RoofPlanks":
                 case "SidePlanks":
+                case "observatoryFloorMat":
                     return SurfaceType.Planks;
 
                 case "Skull_Color":
                     return SurfaceType.Bone;
+
+                case "observatoryCeilingMat":
+                    return SurfaceType.Ceramic;
 
                 case "TreeLeaves":
                 case "OuterLeaves":
@@ -272,6 +276,8 @@ namespace Axiom
                 case "InnerRug":
                     return SurfaceType.Fabric;
 
+                case "At1Base1Mtl":
+                case "Cube0141Mtl":
                 case "Pic1Mtl":
                     return SurfaceType.GrittyRock;
 
@@ -293,6 +299,7 @@ namespace Axiom
                 case "Glass":
                 case "Glass_0":
                 case "FishTankGlass":
+                case "telescopeLensMat":
                     return SurfaceType.Glass;
 
                 case "FishTankMat":
@@ -304,12 +311,16 @@ namespace Axiom
                 case "RadioAntennaMat":
                 case "CairnLamp_Color":
                 case "StreetlampMat":
+                case "telescopeBodyMat":
+                case "telescopeArmsMat":
                     return SurfaceType.Metal;
 
                 case "LandingPlatform_Color":
+                case "observatoryWallsMat":
                 case "Well":
                     return SurfaceType.Stone;
 
+                case "FakeWater":
                 case "WellWater":
                     return SurfaceType.Water;
 
