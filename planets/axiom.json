@@ -222,6 +222,18 @@
         "volume": 0.25
       },
       {
+        "audio": "audio/alien_geiger_counter.ogg",
+        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/RadTow2/SatelliteSignal",
+        "isRelativeToParent": true,
+        "frequency": "Radio",
+        "name": "Traveler Tree House Satellite Dish",
+        "rename": "GeigerCounter",
+        "detectionRadius": 40,
+        "identificationRadius": 30,
+        "sourceRadius": 5,
+        "volume": 0.25
+      },
+      {
         "audio": "audio/OW Banjo No Verb 050913.ogg",
         "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Archeologist/ArcheologistMaster_banjo_anm/ArcheologistMaster_Rig:Hips/ArcheologistMaster_Rig:Spine/ArcheologistMaster_Rig:Spine1/ArcheologistMaster_Rig:spine3_CTRL/ArcheologistMaster_Rig:RightArm/ArcheologistMaster_Rig:RightForeArm/ArcheologistMaster_Rig:RightHand/BanjoContainer",
         "isRelativeToParent": true,
