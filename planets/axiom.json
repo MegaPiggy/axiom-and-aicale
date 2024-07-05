@@ -251,7 +251,7 @@
       },
       {
         "audio": "audio/OW Harmonica No Verb 050913.ogg",
-        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Woodsman/Woodsman_Harmonica_AnmV2/HarmonicaRoot/HarmonicaSignal",
+        "parentPath": "Sector/IcePlanet/Interior/TreeTravelers/Woodsman/Woodsman_Harmonica_AnmV2/joint2/HarmonicaSignal",
         "isRelativeToParent": true,
         "frequency": "Traveler",
         "name": "Woodsman",

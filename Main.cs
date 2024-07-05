@@ -170,7 +170,6 @@ namespace Axiom
         private void OnAxiomLoaded(GameObject axiom)
         {
             ModHelper.Console.WriteLine("Axiom has loaded", MessageType.Info);
-            axiom.transform.Find("Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/TwoStoryCabin (1)/AirCurrent").transform.localPosition = new Vector3(-4.5452f, 9.061f, 1.25f);
             axiom.transform.Find("Sector/IcePlanet/Interior/Details/TreeHouseIsland").gameObject.SetActive(false); // Disable for now until I can make it less laggy
             HandleMaterials(axiom);
         }
@@ -221,7 +220,7 @@ namespace Axiom
                         SurfaceType type = GetSurfaceType(mat);
                         if (type != SurfaceType.None)
                         {
-                            surfaceManager._lookupTable.Add(mat, type);
+                            surfaceManager._lookupTable.SafeAdd(mat, type);
                         }
                     }
                 }
