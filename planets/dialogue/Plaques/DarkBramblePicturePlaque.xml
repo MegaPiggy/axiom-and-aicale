@@ -4,7 +4,9 @@
     <Name>Sign</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page></Page>
+      <Page>Here you can see a picture of Dark Bramble from our old solar system.</Page>
+      <Page>It had long twisting vines and fog that hid anything that was inside.</Page>
+      <Page>The only thing we know about this place was that it was the home of the Anglerfish.</Page>
     </Dialogue>
     <RevealFacts>
       <FactID>AXIOM_OBSERVATORY</FactID>

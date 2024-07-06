@@ -4,7 +4,8 @@
     <Name>Sign</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page></Page>
+      <Page>In this picture you can see a picture of a space station that orbited our old star.</Page>
+      <Page>We never landed on it but we were able to launch probes that took this photo.</Page>
     </Dialogue>
     <RevealFacts>
       <FactID>AXIOM_OBSERVATORY</FactID>

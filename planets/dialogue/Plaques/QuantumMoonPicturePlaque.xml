@@ -4,7 +4,9 @@
     <Name>Sign</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page></Page>
+      <Page>We aren't quite sure why in this picture there is a cabin similar to the ones in our village.</Page>
+      <Page>It was taken from one of our probes after launching it into a ghostly moon.</Page>
+      <Page>If we had more time in the old solar system, we might have been able to figure out what this is.</Page>
     </Dialogue>
     <RevealFacts>
       <FactID>AXIOM_OBSERVATORY</FactID>

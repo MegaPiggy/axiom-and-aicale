@@ -4,7 +4,7 @@
     <Name>Sign</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page></Page>
+      <Page>In this picture you can see the inside of the ancient civilization's Observatory on the south pole of Brittle Hollow.</Page>
     </Dialogue>
     <RevealFacts>
       <FactID>AXIOM_OBSERVATORY</FactID>
