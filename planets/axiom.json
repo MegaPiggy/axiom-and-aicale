@@ -392,8 +392,8 @@
         "name": "Traveler Tree House Satellite Dish",
         "rename": "GeigerCounter",
         "detectionRadius": 40,
-        "identificationRadius": 30,
-        "sourceRadius": 5,
+        "identificationRadius": 10,
+        "sourceRadius": 0.5,
         "volume": 0.25
       },
       {
