@@ -321,6 +321,10 @@
             "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/DarkBramblePicturePivot/Plaque_Standing/InteractVolume"
         },
         {
+            "xmlFile": "planets/dialogue/Plaques/QuantumMoonPicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/QuantumMoonPicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
             "xmlFile": "planets/dialogue/Plaques/RosettaStonePlaque.xml",
             "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AncientCultureExhibit/ExhibitRoot/RosettaStone/Plaque_Standing/InteractVolume"
         },
