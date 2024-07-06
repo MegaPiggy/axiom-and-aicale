@@ -297,6 +297,7 @@ namespace Axiom
 
                 case "Glass":
                 case "Glass_0":
+                case "displayCase":
                 case "FishTankGlass":
                 case "telescopeLensMat":
                     return SurfaceType.Glass;

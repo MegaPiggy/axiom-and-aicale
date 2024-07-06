@@ -186,6 +186,169 @@
         }
       }
     ],
+    "dialogue": [
+        {
+            "xmlFile": "planets/dialogue/Archaeologist.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/TreeTravelers/Archeologist/ConversationVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Astronomer.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/TreeTravelers/Astronomer/ConversationVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Woodsman.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/TreeTravelers/Woodsman/ConversationVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Zen.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/TreeTravelers/Zen/ConversationVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Coach.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/Coach/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/Craftsman.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/Craftsman/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/Curator.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/MapRoom/Curator/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/Outfitter.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/Outfitter/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/RocketKid.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/RocketKid/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/RocketScientist.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/RocketScientist/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/Skeptic.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/Skeptic/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/TelescopeKid.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/TelescopeKid/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/VillageLeader.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/QuietTown/VillageLeader/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/Eornost.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/UnderTheIce/Eornost/ConversationZone"
+        },
+        {
+            "xmlFile": "planets/dialogue/Gieselwald.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/UnderTheIce/Gieselwald/ConversationZone"
+        },
+
+        {
+            "xmlFile": "planets/dialogue/Plaques/VillagePicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Atrium/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/TidalBallPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/GravityBallExhibit/GravityBallRoot/GravityBallPlaque/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/StarLifeCycle01.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/StarLifeCycleExhibit/Pivot01/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/StarLifeCycle02.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/StarLifeCycleExhibit/Pivot02/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/StarLifeCycle03.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/StarLifeCycleExhibit/Pivot03/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/StarLifeCycle04.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/StarLifeCycleExhibit/Pivot04/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/StarLifeCycle05.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/StarLifeCycleExhibit/Pivot05/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/GravityShardPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/GravityFieldExhibit/GravityFieldPlaque/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/PilotSeatPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/SpaceProgramExhibit/PilotSeat/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/PowerConverterPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/SpaceProgramExhibit/PowerConverter/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/OxygenTankPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/SpaceProgramExhibit/OxygenTank/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/HelmetPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/SpaceProgramExhibit/Helmet/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/RuinPicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/RuinPicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/GiantsDeepAntennaPicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/GiantsDeepAntennaPicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/EscapePodPicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/EscapePodPicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/Extra1PicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/Extra1PicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/Extra2PicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/Extra2PicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/Extra3PicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/Extra3PicturePivot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/RosettaStonePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AncientCultureExhibit/ExhibitRoot/RosettaStone/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/SkullPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AncientCultureExhibit/ExhibitRoot/Skull/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/HologramProjectorPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AncientTechExhibit/ExhibitRoot/HologramProjector/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/ProbePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AncientTechExhibit/ExhibitRoot/Probe/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/FishTankPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AnglerfishExhibit/ExhibitRoot/FishTankRoot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/AnglerfishToothPlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/AnglerfishExhibit/ExhibitRoot/ToothRoot/Plaque_Standing/InteractVolume"
+        },
+        {
+            "xmlFile": "planets/dialogue/Plaques/QuantumStatuePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/QuantumStatueExhibit/Plaque"
+        }
+    ],
     "signals": [
       {
         "audio": "audio/AlienBeacon_Source2.wav",

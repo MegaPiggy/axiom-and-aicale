@@ -48,6 +48,12 @@
         }
       }
     ],
+    "dialogue": [
+      {
+        "xmlFile": "planets/dialogue/MoonWarden.xml",
+        "pathToExistingDialogue": "Sector/Moon/Interior/WardenArea/MoonWarden/ConversationZone"
+      }
+    ],
     "signals": [
       {
         "audio": "audio/OW Space - Into The Unknown 100912 AP.ogg",
