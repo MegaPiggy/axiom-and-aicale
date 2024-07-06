@@ -45,7 +45,8 @@ namespace Axiom
         {
             if (_animator != null && _animator.enabled)
             {
-                _animator.SetTrigger("Talking");
+                _animator.SetBool("Playing", false);
+                _animator.SetBool("Talking", true);
             }
             if (_animation != null && _animation.enabled)
             {
@@ -58,7 +59,8 @@ namespace Axiom
         {
             if (_animator != null && _animator.enabled)
             {
-                _animator.SetTrigger("Playing");
+                _animator.SetBool("Talking", false);
+                _animator.SetBool("Playing", true);
             }
             if (_animation != null && _animation.enabled)
             {
