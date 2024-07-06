@@ -309,16 +309,16 @@
             "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/EscapePodPicturePivot/Plaque_Standing/InteractVolume"
         },
         {
-            "xmlFile": "planets/dialogue/Plaques/Extra1PicturePlaque.xml",
-            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/Extra1PicturePivot/Plaque_Standing/InteractVolume"
+            "xmlFile": "planets/dialogue/Plaques/BrittleHollowSouthernObservatoryPicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/BrittleHollowSouthernObservatoryPicturePivot/Plaque_Standing/InteractVolume"
         },
         {
-            "xmlFile": "planets/dialogue/Plaques/Extra2PicturePlaque.xml",
-            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/Extra2PicturePivot/Plaque_Standing/InteractVolume"
+            "xmlFile": "planets/dialogue/Plaques/SunStationPicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/SunStationPicturePivot/Plaque_Standing/InteractVolume"
         },
         {
-            "xmlFile": "planets/dialogue/Plaques/Extra3PicturePlaque.xml",
-            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/Extra3PicturePivot/Plaque_Standing/InteractVolume"
+            "xmlFile": "planets/dialogue/Plaques/DarkBramblePicturePlaque.xml",
+            "pathToExistingDialogue": "Sector/IcePlanet/Interior/VillageObservatoryIsland/Observatory/Interior/Exhibits/PictureFrames/DarkBramblePicturePivot/Plaque_Standing/InteractVolume"
         },
         {
             "xmlFile": "planets/dialogue/Plaques/RosettaStonePlaque.xml",
